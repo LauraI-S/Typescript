@@ -3,17 +3,9 @@
 //!BETTER error-feedback ahead of runtime!
 //1. better autocomplettion & better feedback/code-hints
 //examples:
-
-interface MenuItem {
-    title: string
-    cost: number
+function printMenuItem(item) {
+    console.log('item.title :>> ', ":", item.cost);
 }
-function printMenuItem(item: MenuItem) {
-    console.log('item.title :>> ',":", item.cost);
-}
-
-printMenuItem({ title: "cheese pizza", cost: 18 })
-
+printMenuItem({ title: "cheese pizza", cost: 18 });
 //self-documenting, makes it easier to navigate within the code, especially when the code becomes more complex
-
-printMenuItem(item: { title: "bread", cost:5 })
+printMenuItem();
